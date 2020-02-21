@@ -24,7 +24,7 @@ app.use((ctx, next) => {
 app.use(router.routes());  
 // app.listen(3000);
 
-const server = app.listen(3000).on("error", err => {
+const server = app.listen(3001).on("error", err => {
   console.error(err);
 });
 
