@@ -23,8 +23,8 @@ workflows:
       jobs:
         - aws-ecr/build-and-push-image:
             account-url: AWS_ECR_ACCOUNT_URL
-            aws-access-key-id: AIDAX33NMTCOI5HI33API
-            aws-secret-access-key: arnidpRH1qwVLEqxe0X1KytXyzhUjBy0Q2RJYSIv
+            aws-access-key-id: "AIDAX33NMTCOI5HI33API"
+            aws-secret-access-key: "arnidpRH1qwVLEqxe0X1KytXyzhUjBy0Q2RJYSIv"
             context: aws
             create-repo: true
             dockerfile: Dockerfile
