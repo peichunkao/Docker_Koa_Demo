@@ -31,7 +31,7 @@ workflows:
             # path: pathToMyDockerfile
             profile-name: myProfileName
             region: AWS_REGION_ENV_VAR_NAME
-            repo: myrepo
+            repo: koa_docker_demo
             tag: 'latest,myECRRepoTag'
 
 
