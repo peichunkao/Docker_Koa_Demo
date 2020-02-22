@@ -3,26 +3,15 @@
   "containerDefinitions": [
     {
       "name": "server",
-      "image": "540858423452.dkr.ecr.us-east-2.amazonaws.com/koa_docker_demo",
-      "essential": true,
-      "memory": 200,
-      "cpu": 1
-    },
-    {
-      "name": "proxy",
-      "image": "540858423452.dkr.ecr.us-east-2.amazonaws.com/eb-docker-proxy",
+      "image": "540858423452.dkr.ecr.us-east-2.amazonaws.com/koa_docker_demo:latest",
       "essential": true,
       "memory": 200,
       "cpu": 1,
       "portMappings": [
         {
           "hostPort": 3000,
-          "containerPort": 3000,
-          "protocol": "tcp"
+          "containerPort": 3000
         }
-      ],
-      "links": [
-        "server:server"
       ]
     }
   ]

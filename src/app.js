@@ -1,6 +1,7 @@
 const Koa = require('koa');  
 const Logger = require('koa-logger')
 const Router = require('koa-router')
+var port = process.env.PORT || 3000
 const app = new Koa(); 
 const router = Router();
 
@@ -22,7 +23,7 @@ app.use((ctx, next) => {
 });
 
 app.use(router.routes());  
-const server = app.listen(3000).on("error", err => {
+const server = app.listen(port).on("error", err => {
   console.error(err);
 });
 
