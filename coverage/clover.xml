@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1582339211843" clover="3.2.0">
-  <project timestamp="1582339211843" name="All files">
+<coverage generated="1582342411000" clover="3.2.0">
+  <project timestamp="1582342411001" name="All files">
     <metrics statements="19" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3" elements="24" coveredelements="20" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
     <file name="app.js" path="D:\Full Stack\Back-End\koa1\src\app.js">
       <metrics statements="19" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
@@ -20,9 +20,9 @@
       <line num="19" count="1" type="stmt"/>
       <line num="20" count="1" type="stmt"/>
       <line num="24" count="1" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="28" count="0" type="stmt"/>
-      <line num="31" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
