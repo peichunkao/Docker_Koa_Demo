@@ -10,7 +10,7 @@
     },
     {
       "name": "proxy",
-      "image": "lzac/eb-docker-proxy",
+      "image": "540858423452.dkr.ecr.us-east-2.amazonaws.com/eb-docker-proxy",
       "essential": true,
       "memory": 200,
       "cpu": 1,
