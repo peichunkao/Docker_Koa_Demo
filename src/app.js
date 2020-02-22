@@ -5,7 +5,7 @@ const app = new Koa();
 const router = Router();
 
 router.get('/', async(ctx) => {     
-  ctx.body = 'Hello Koa body'; 
+  ctx.body = 'Hello Koa'; 
 });  
 
 router.get('/hello', async(ctx) => {     
@@ -22,8 +22,6 @@ app.use((ctx, next) => {
 });
 
 app.use(router.routes());  
-// app.listen(3000);
-
 const server = app.listen(3000).on("error", err => {
   console.error(err);
 });

@@ -28,8 +28,6 @@ workflows:
             context: aws
             create-repo: true
             dockerfile: Dockerfile
-            # path: pathToMyDockerfile
-            profile-name: myProfileName
             region: AWS_REGION_ENV_VAR_NAME
             repo: koa_docker_demo
-            tag: 'latest,myECRRepoTag'
+            tag: 'latest,myTag'

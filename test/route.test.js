@@ -10,5 +10,6 @@ describe("routes: index", () => {
     const response = await request(server).get("/hello");
     expect(response.status).toEqual(200);
     expect(response.type).toEqual("text/plain");
+    expect(response.text).toEqual("world");
   });
 });
