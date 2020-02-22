@@ -1,0 +1,29 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "server",
+      "image": "540858423452.dkr.ecr.us-east-2.amazonaws.com/koa_docker_demo",
+      "essential": true,
+      "memory": 200,
+      "cpu": 1
+    },
+    {
+      "name": "proxy",
+      "image": "lzac/eb-docker-proxy",
+      "essential": true,
+      "memory": 200,
+      "cpu": 1,
+      "portMappings": [
+        {
+          "hostPort": 3000,
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "links": [
+        "server:server"
+      ]
+    }
+  ]
+}
